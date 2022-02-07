@@ -1,16 +1,13 @@
 'use strict';
 
-const express = require('express');
+/ app.js
+const express = require('express')
 
-// Constants
-const PORT = 8080;
-const HOST = 'localhost';
+// Create Express app
+const app = express()
 
-// App
-const app = express();
-app.get('/', (req, res) => {
-  res.send('<h1 style="color:green;">Java Home App - version-10!!</h1> \n');
-});
+// A sample route
+app.get('/', (req, res) => res.send('Hello World!'))
 
-app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
+// Start the Express server
+app.listen(3000, () => console.log('Server running on port 3000!'))
