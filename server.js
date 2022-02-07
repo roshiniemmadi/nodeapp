@@ -1,6 +1,6 @@
 'use strict';
 
-/ app.js
+// app.js
 const express = require('express')
 
 // Create Express app
